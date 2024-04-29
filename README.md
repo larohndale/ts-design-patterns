@@ -25,16 +25,16 @@ const settings = Settings.getInstance();
 ### Prototype
 
 - Allows cloning of objects rather than extending via inheritance.
-- **Example:** Cloning a `zombie` object to create new instances.
+- **Example:** Cloning a `workout` object to create new instances.
 
 ```typescript
-const zombie = {
-  eatBrains() {
-    return 'yum 🧠';
+const workout = {
+  startWorkout() ∫{
+    return 'work smart 🧠';
   },
 };
-const chad = Object.create(zombie, { name: { value: 'chad' } });
-const babyChad = Object.create(chad, { baby: { value: true } });
+const bench = Object.create(workout, { name: { value: 'bench' } });
+const supersetBench = Object.create(bench, { supersetBench: { value: true } });
 ```
 
 ### Factory
